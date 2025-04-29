@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;IB Grade Calculator&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-blue-50 min-h-screen font-sans"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container mx-auto p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="text-center mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1 class="text-3xl font-bold text-blue-800 mb-2"&gt;Welcome to the IB Grade Calculator!&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="text-gray-600"&gt;Predict your IB grades instantly. Choose your Group, Subject, and Level.&lt;br&gt;(More subjects coming soon.)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-xl shadow-md space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label for="group" class="block mb-1 text-sm font-medium text-gray-700"&gt;Select Group&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select id="group" class="w-full p-2 border rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value=""&gt;Choose Group&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Group 1"&gt;Group 1: Language A&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Group 2"&gt;Group 2: Language B&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Group 3"&gt;Group 3: Individuals and Societies&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Group 4"&gt;Group 4: Sciences&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Group 5"&gt;Group 5: Mathematics&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Group 6"&gt;Group 6: Arts&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label for="subject" class="block mb-1 text-sm font-medium text-gray-700"&gt;Select Subject&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select id="subject" class="w-full p-2 border rounded-lg" disabled&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value=""&gt;Choose Subject&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label for="level" class="block mb-1 text-sm font-medium text-gray-700"&gt;Select Level&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select id="level" class="w-full p-2 border rounded-lg" disabled&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value=""&gt;Choose Level&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="inputFields"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="results" class="hidden bg-blue-100 p-4 rounded-lg text-center"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const data = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>"Group 5": {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Mathematics: Applications and Interpretation": ["SL", "HL"],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"Mathematics: Analysis and Approaches": ["SL", "HL"]</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const courses = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>"Mathematics: Applications and Interpretation SL": {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inputs: [</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "Paper 1", max: 80, weight: 0.4 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "Paper 2", max: 80, weight: 0.4 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "IA", max: 20, weight: 0.2 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>boundaries: [</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 0, max: 12, grade: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 13, max: 24, grade: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 25, max: 37, grade: 3 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 38, max: 50, grade: 4 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 51, max: 64, grade: 5 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 65, max: 76, grade: 6 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 77, max: 100, grade: 7 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>"Mathematics: Applications and Interpretation HL": {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inputs: [</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "Paper 1", max: 110, weight: 0.3 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "Paper 2", max: 110, weight: 0.3 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "Paper 3", max: 55, weight: 0.2 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "IA", max: 20, weight: 0.2 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>boundaries: [</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 0, max: 13, grade: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 14, max: 23, grade: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 24, max: 33, grade: 3 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 34, max: 46, grade: 4 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 47, max: 59, grade: 5 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 60, max: 73, grade: 6 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 74, max: 100, grade: 7 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>"Mathematics: Analysis and Approaches SL": {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inputs: [</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "Paper 1", max: 80, weight: 0.4 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "Paper 2", max: 80, weight: 0.4 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "IA", max: 20, weight: 0.2 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>boundaries: [</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 0, max: 8, grade: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 9, max: 17, grade: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 18, max: 29, grade: 3 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 30, max: 43, grade: 4 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 44, max: 58, grade: 5 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 59, max: 74, grade: 6 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 75, max: 100, grade: 7 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>"Mathematics: Analysis and Approaches HL": {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inputs: [</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "Paper 1", max: 110, weight: 0.3 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "Paper 2", max: 110, weight: 0.3 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "Paper 3", max: 55, weight: 0.2 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ name: "IA", max: 20, weight: 0.2 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>boundaries: [</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 0, max: 13, grade: 1 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 14, max: 23, grade: 2 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 24, max: 33, grade: 3 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 34, max: 46, grade: 4 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 47, max: 59, grade: 5 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 60, max: 73, grade: 6 },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{ min: 74, max: 100, grade: 7 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const groupSelect = document.getElementById('group');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const subjectSelect = document.getElementById('subject');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const levelSelect = document.getElementById('level');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const inputFields = document.getElementById('inputFields');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const results = document.getElementById('results');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>groupSelect.addEventListener('change', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>subjectSelect.innerHTML = '&lt;option value=""&gt;Choose Subject&lt;/option&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>levelSelect.innerHTML = '&lt;option value=""&gt;Choose Level&lt;/option&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>inputFields.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>results.classList.add('hidden');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (data[groupSelect.value]) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>subjectSelect.disabled = false;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Object.keys(data[groupSelect.value]).forEach(subject =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const option = document.createElement('option');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>option.value = subject;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>option.textContent = subject;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>subjectSelect.appendChild(option);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>subjectSelect.disabled = true;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>levelSelect.disabled = true;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>subjectSelect.addEventListener('change', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>levelSelect.innerHTML = '&lt;option value=""&gt;Choose Level&lt;/option&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>inputFields.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>results.classList.add('hidden');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const group = groupSelect.value;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const subject = subjectSelect.value;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (data[group] &amp;&amp; data[group][subject]) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>levelSelect.disabled = false;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>data[group][subject].forEach(level =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const option = document.createElement('option');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>option.value = level;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>option.textContent = level;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>levelSelect.appendChild(option);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>levelSelect.disabled = true;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>levelSelect.addEventListener('change', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const courseKey = `${subjectSelect.value} ${levelSelect.value}`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const course = courses[courseKey];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (course) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inputFields.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>course.inputs.forEach((input, idx) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>inputFields.innerHTML += `</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;label class="block text-sm font-medium text-gray-700"&gt;${input.name} (out of ${input.max})&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="number" min="0" max="${input.max}" id="input${idx}" class="w-full p-2 border rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>inputFields.innerHTML += `</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button id="calculate" class="mt-6 w-full bg-blue-600 text-white p-2 rounded-lg"&gt;Calculate&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('calculate').addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>calculateGrade(course);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inputFields.innerHTML = '&lt;div class="mt-4 text-center text-gray-500"&gt;Coming soon...&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function calculateGrade(course) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>let total = 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>let valid = true;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>course.inputs.forEach((input, idx) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const val = parseFloat(document.getElementById(`input${idx}`).value);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (isNaN(val) || val &lt; 0 || val &gt; input.max) valid = false;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>total += (val / input.max) * 100 * input.weight;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!valid) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alert('Please enter valid scores.');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>total = Math.round(total);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const grade = course.boundaries.find(b =&gt; total &gt;= b.min &amp;&amp; total &lt;= b.max)?.grade || 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>results.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>results.innerHTML = `&lt;h2 class="text-2xl font-bold text-blue-800"&gt;Final Weighted Score: ${total}%&lt;/h2&gt;&lt;p class="text-lg text-gray-700"&gt;Predicted IB Grade: ${grade}&lt;/p&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
